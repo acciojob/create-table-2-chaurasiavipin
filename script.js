@@ -3,7 +3,7 @@ function createTable() {
 	const table=document.getElementById("myTable");
 	table.innerHTML=""
 	let row=parseInt(prompt("Input number of rows"));
-	let col=parseInt(prompt("Input number of col"));
+	let col=parseInt(prompt("Input number of columns"));
 	
 if(isNaN(row) || row<=0  || isNaN(col) || col<=0 ){
 	alert("do not create the table") 
@@ -14,7 +14,7 @@ else{
 		let storerow=document.createElement("tr");
 		for(let j=0;j<col;j++){
 			let cell=document.createElement("td");
-			 cell.innerText = `Row-${i+1} Column-${j+1}`; 
+			 cell.innerText = `Row-${i} Column-${j}`; 
     storerow.appendChild(cell);
 		}
 		  table.appendChild(storerow);
