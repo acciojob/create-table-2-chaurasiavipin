@@ -5,7 +5,8 @@ function createTable() {
 	let col=parseInt(prompt("Input number of col"));
 	
 if(isNaN(row) || row<=0  && isNaN(col) || col<=0 ){
-	alert("do not create the table")
+	alert("do not create the table") 
+		return
 }
 else{ 
 	for(let i=0; i<row;i++){
