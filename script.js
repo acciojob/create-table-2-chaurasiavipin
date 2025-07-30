@@ -1,4 +1,32 @@
 function createTable() {
     //Write your code here
-  
+	const table=document.getElementById("#myTable");
+	let row=prompt("Input number of rows");
+	let col=prompt("Input number of col");
+	row=Number(row);
+	col=Number(col);
+if(isNaN(row) || row<=0  && isNaN(col) || col<=0 ){
+	alert("do not create the table")
+}
+else{ 
+	for(let i=0; i<row;i++){
+		let storerow=document.createElement("tr");
+		for(let j=0;j<col;j++){
+			let cell=document.createElement("td");
+			 cell.textContent = `Row ${i + 1}, Col ${j + 1}`;
+    storerow.appendChild(cell);
+		}
+		  table.appendChild(storerow);
+	}
+	
+	
+}
+
+
+
+
+
+
+
+	
 }
