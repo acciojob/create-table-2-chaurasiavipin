@@ -6,14 +6,14 @@ function createTable() {
 	
 if(isNaN(row) || row<=0  && isNaN(col) || col<=0 ){
 	alert("do not create the table") 
-		return
+		return;
 }
 else{ 
 	for(let i=0; i<row;i++){
 		let storerow=document.createElement("tr");
 		for(let j=0;j<col;j++){
 			let cell=document.createElement("td");
-			 cell.textContent = `Row ${i + 1}, Col ${j + 1}`;
+			 cell.innerText = `Row-${i} Column-${j}`; ;
     storerow.appendChild(cell);
 		}
 		  table.appendChild(storerow);
