@@ -14,7 +14,7 @@ else{
 		let storerow=document.createElement("tr");
 		for(let j=0;j<col;j++){
 			let cell=document.createElement("td");
-			 cell.innerText = `Row-${i} Column-${j}`; 
+			 cell.innerText = `Row-${i+1} Column-${j+1}`; 
     storerow.appendChild(cell);
 		}
 		  table.appendChild(storerow);
