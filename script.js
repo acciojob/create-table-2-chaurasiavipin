@@ -1,10 +1,9 @@
 function createTable() {
     //Write your code here
 	const table=document.getElementById("#myTable");
-	let row=prompt("Input number of rows");
-	let col=prompt("Input number of col");
-	row=Number(row);
-	col=Number(col);
+	let row=parseInt(prompt("Input number of rows"));
+	let col=parseInt(prompt("Input number of col"));
+	
 if(isNaN(row) || row<=0  && isNaN(col) || col<=0 ){
 	alert("do not create the table")
 }
